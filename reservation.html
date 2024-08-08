@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RESERVATION D'HOTEL</title>
+         <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" >Acceuil</a>
+                <a href="patrimoine.html">Patrimoines</a>
+                <a href="reservation.html"class="active">Réservation d'hôtel</a>
+                <a href="galerie.html">Galerie</a>
+            </nav>
+        </header>
+<body>
+    <br>   <br>  <br>  <br>
+    <h1>FORMULAIRE DE RESERVATION D'HOTEL</h1>
+    <form id="reservationform" action="">
+        <fieldset>
+            <legend><b><u>CATALOGUE DES HOTELS</u></b></legend>    
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="card-list">
+                        <div class="card-item">
+                            <img src="iba.jpg" alt="iba" class="user-image">
+                            <h2 class="user-name">IBA HOTEL</h2>
+                        </div>
+                        <div class="card-item">
+                            <img src="saby.jpg" alt="saby" class="user-image">
+                            <h2 class="user-name">SABY HOTEL</h2>
+                        </div>
+                        <div class="card-item">
+                            <img src="hotel_sissima.jpg" alt="hotel_sissima" class="user-image">
+                            <h2 class="user-name">SISSIMA HOTEL</h2>
+                        </div>
+                        <div class="card-item">
+                            <img src="wifama.jpg" alt="wifama hotel" class="user-image">
+                            <h2 class="user-name">WIFAMA HOTEL HOLIDAY</h2>
+                        </div>
+                        <div class="card-item">
+                            <img src="pacific.jpg" alt="Pacific hotel" class="user-image">
+                            <h2 class="user-name">PACIFIC HOTEL</h2>
+                        </div>
+                        <div class="card-item">
+                            <img src="auberge.jpg" alt="Hotel l'AUBERGE" class="user-image">
+                            <h2 class="user-name">HOTEL l'AUBERGE</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>RESERVATION</b></legend>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+            <div class="form-group">
+                <label for="sexe">Sexe :</label>
+                <select name="sexe" id="sexe">
+                    <option value="f">Feminin</option>
+                    <option value="m">Masculin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="date1">Date d'arrivée :</label>
+                <input type="text" id="date1" name="date1" placeholder="jj-mm-aaaa" required>
+            </div>
+            <div class="form-group">
+                <label for="date2">Date de départ :</label>
+                <input type="text" id="date2" name="date2" placeholder="jj-mm-aaaa" required>
+            </div>
+            <div class="form-group">
+                <label for="chambre">Type de chambre :</label>
+                <select name="chambre" id="chambre">
+                    <option value="simple">SIMPLE</option>
+                    <option value="double">DOUBLE</option>
+                    <option value="suite">SUITE</option>    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hotel">Hotel :</label>
+                <select name="hotel" id="hotel">
+                    <option value="IBA HOTEL">IBA HOTEL</option>
+                    <option value="SABY HOTEL">SABY HOTEL</option>
+                    <option value="HOTEL L'AUBERGE">HOTEL L'AUBERGE</option>
+                    <option value="PACIFIC HOTEL">PACIFIC HOTEL</option>
+                    <option value="WIFAMA HOTEL HOLIDAY">WIFAMA HOTEL HOLIDAY</option>
+                    <option value="HOTEL SISSIMA">HOTEL SISSIMA</option>
+                </select>
+            </div>
+        </fieldset>
+        <button onclick="displaymessage()" type="submit">Reserver</button>
+        <button type="reset">Annuler</button>
+    </form>
+    <div id="message"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: white;
+    --second-bg-color: #151515;
+    --text-color: rgb(10, 10, 10);
+    --main-color: #1169d4;
+}
+
+html {
+    font-size: 60.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+}
+
+        .navbar a{
+    color: white;
+    font-size: 2rem;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+      .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px ;
+    background:rgb(25, 160, 194);  
+    backdrop-filter: blur(10px);
+    display: flex auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+   .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .slider-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            flex: 1 1 calc(100% / 3 - 40px);
+            max-width: calc(100% / 3 - 40px);
+            display: flex;
+        }
+        .user-image {
+            width: 100%;
+            height: auto;
+        }
+        .user-name, .user-profession {
+            margin: 10px 0;
+        }
+        .message-button {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .card-item {
+                flex: 1 1 calc(100% / 2 - 20px);
+                max-width: calc(100% / 2 - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
