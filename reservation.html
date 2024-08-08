@@ -182,6 +182,9 @@
                 padding: 10px 20px;
             }
         }
+        .b{
+            text-decoration-color: white;
+        }
 
         @media (max-width: 600px) {
             .header {
@@ -208,7 +211,7 @@
     <form id="reservationform" method="POST" action="/envoyer-reservation">
         <h1>SOYEZ LE BIENVENNUE </h1>
         <fieldset>
-            <legend><ins>Catalogues des hôtels</ins></legend>
+            <legend><ins><b>Catalogues des hôtels</b></ins></legend>
             <div class="photo-container">
                 <div class="photo">
                     <img src="iba.jpg" alt="IBA HOTEL">
@@ -237,7 +240,7 @@
             </div>
         </fieldset>
         <fieldset>
-            <legend><b>Réservation</b></legend>
+            <legend><b> Réservation</b></legend>
             <div class="form-group">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
